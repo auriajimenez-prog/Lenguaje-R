@@ -8,9 +8,12 @@
     2  sudo xcodebuild -license
     3  git --version
     4  getwd()
-3. Se subieron los archivos del curso de visualizaciones haciendo click en Add files, upload y seleccionar los archivos, ya que se cargaron se le da en commit para actualizar
+    usethis::create_github_token()
+    gitcreds::gitcreds_set()
+   
+4. Se subieron los archivos del curso de visualizaciones haciendo click en Add files, upload y seleccionar los archivos, ya que se cargaron se le da en commit para actualizar
 
-4. Uso de los comando de Unix en la terminal de RStudio
+5. Uso de los comando de Unix en la terminal de RStudio
  
     1  pwd
     2  ls
