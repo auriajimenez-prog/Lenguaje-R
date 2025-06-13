@@ -21,7 +21,6 @@
     4  ls rda/
     5  history
 
-
 Apoyo
 ls: Lista los archivos y directorios.
 cd: Cambia el directorio actual.
