@@ -21,6 +21,29 @@
     4  ls rda/
     5  history
 
+Trabajar con github desde la terminal
+pwd
+mkdir git-example
+cd git-example
+git clone https://github.com/rairizarry/murders.git
+cd murders
+ls
+git status
+echo "test" >> new-file.txt
+echo "temporary" >> tmp.txt
+git add new-file.txt
+git status
+git commit -m "añadiendo un nuevo archivo"
+git status
+echo "añadiendo una segunda línea" >> new-file.txt
+git commit -m "cambio menor en new-file" new-file.txt
+git status
+git add
+git log new-file.txt
+git push
+git fetch
+git merge
+
 Apoyo
 ls: Lista los archivos y directorios.
 cd: Cambia el directorio actual.
