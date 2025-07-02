@@ -1,0 +1,39 @@
+datos <- read.csv(file.choose(),header=TRUE, sep=",")
+library(readr)
+library(dplyr)
+url <- "https://github.com/rafalab/dslabs/blob/master/inst/extdata/murders.csv"
+murders <- read.csv(url)
+url <- "https://raw.githubusercontent.com/rafalab/dslabs/master/inst/extdata/murders.csv"
+murders <- read.csv(url)
+View(murders)
+library(dslabs)
+murders |>
+filter(region=="South", population>1e6)
+murders|>
+slice(1:5)
+murders|>
+arrange(desc(total))
+murders |>
+select(state,population,total)
+murders |>
+rename(habitantes=population, total_asesinatos=total)
+datos |>
+ggplot(aes(region,total))+
+geom_point()
+library(ggplot2)
+datos |>
+ggplot(aes(region,total))+
+geom_point()
+datos |>
+ggplot(aes(x = population / 10^6, y = total, label = abb)) +
+geom_point(aes(color = region), size = 3)
+datos_act_grup <- read.csv(file.choose(),header=TRUE, sep=",")
+datos_act_grup
+datos_act_grup |> select (Region, arachidic)
+datos_act_grup |> filter (arachidic>90)
+datos_act_grup |> mutate (razon=mean(oleic))
+datos_act_grup |> arrange (palmitic)
+datos_act_grup |> drop_na()
+datos_act_grup |>
+ggplot(aes(x = Region, y = palmitic)) +
+geom_point(aes(color = Region), size = 3)
